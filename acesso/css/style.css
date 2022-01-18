@@ -1,0 +1,67 @@
+/**********************************/
+/* 1. Estilos gerais
+/**********************************/
+*{
+    /*Resete geral em todos os elementos do site*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    height: 100px; /* (altura fixa) tanto desktop quanto mobile*/
+    background-color: black;
+    color: white;
+}
+body{
+    font-family:'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+/**********************************/
+/* 2. Menu / Cabeçalho
+/**********************************/
+.cabecalho{
+    max-width: 1140px;
+    height: 100px;
+    margin: auto; /*centraliza box cabeçalho*/
+    display: flex;
+    align-items: center; /*img logo vai ficar no meio*/
+}
+.logo__imagem{
+    width: 80px;
+    height: 80px;
+    background-color: #B43104;
+    
+}
+.logo{
+    width: 100px; /*larg fixa*/
+}
+.menu{
+    flex: 1; /*vai pegar todo o restante do espaço*/
+    display: flex; /*esse aqui com ↓ esse*/
+    justify-content: flex-end; /*faz todo o conteudo no menu ir para direita*/
+
+}
+.menu ul, .menu li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;/*menu um ao lado do outro*/
+}
+.menu li a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;/*vai precisar aumentar a altura por causa da borda embaixo*/
+    height: 100px; /*efeito de cima complementa essa altura*/
+    align-items: center; /*complemento para o feito menu*/
+    border-bottom: 5px solid black;/* complemento efeito de passar o mouse*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.menu li a:hover{ /*efeito de passar o mouse*/
+    border-bottom: 5px solid #B43104;
+}
+.menu .menu__ativo a{
+    border-bottom: 5px solid #B43104;
+}
