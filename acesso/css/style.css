@@ -29,7 +29,8 @@ body{
 .logo__imagem{
     width: 80px;
     height: 80px;
-    background-color: #B43104;
+    background-color: #da0026;
+    border-radius: 40px;
     
 }
 .logo{
@@ -61,7 +62,83 @@ body{
 }
 .menu li a:hover{ /*efeito de passar o mouse*/
     border-bottom: 5px solid #B43104;
+    color: palevioletred;
 }
 .menu .menu__ativo a{
     border-bottom: 5px solid #B43104;
+}
+
+/**********************************/
+/* 3. Banner
+/**********************************/
+
+.banner{
+    height: calc(100vh - 100px);/*tamanho total do monitor esse calculo evita barra de rolagem*/
+    background-image: url('../imagens/banner1.jpg');
+    background-position: bottom;/*priorizar a parte de baixo da img*/
+    background-size: cover; /*ajusta a img para prenehcer o tamanho todo do espaço*/
+    background-color: pink;/*esse fundo vai aparecer até que a img carregue*/
+    overflow: hidden;/*tirando a barra de rolagem do banner*/
+}
+.banner .area__sliders{
+    width: 1000vw;
+    height: 100%;
+}
+.banner .slide{
+    width: 100vw;
+    height: 100%;
+    display: inline-block; /*vai deixar o slide um ao lado do outro e manter as propriedades*/
+   /*background-color: rgba(0,0,0,0.7);*/
+    
+}
+.banner .slide__conteudo{
+    display: flex;
+    flex-direction: column; /*para deixar o contato debaixo do titulo*/
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.banner h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+.banner h2{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.banner a{
+    display: block;
+    background-color: #da0026;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.banner .slider__pontos{
+    width: 100vw; /*area inteira*/
+    height: 20px;
+    position: absolute; /*vai deixar area pontos visivel*/
+    margin-top: -50px; /*vai entrar dentro do baneer*/
+    display: flex; /*precesso de alinhamento conteudo centro*/
+    justify-content: center; /*precesso de alinhamento conteudo centro*/
+    align-items: center; /*precesso de alinhamento conteudo centro*/
+}
+.banner .bolinhas{
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer; /*mouse clicavel*/
+
+}
+.banner .bolinhas.marcada{
+    background-color: #da0026;
 }
