@@ -15,6 +15,19 @@ header{
 body{
     font-family:'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 13px;
+    overflow-x: hidden; /*aqui ignora a barra de rolagem inferior*/
+}
+
+.button{
+    display: inline-block;
+    background-color: #da0026;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 30px;
 }
 /**********************************/
 /* 2. Menu / Cabeçalho
@@ -109,17 +122,6 @@ body{
     margin-top: 20px;
 }
 
-.banner a{
-    display: block;
-    background-color: #da0026;
-    color: white;
-    font-size: 13px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-top: 30px;
-    border-radius: 30px;
-}
 .banner .slider__pontos{
     width: 100vw; /*area inteira*/
     height: 20px;
@@ -141,4 +143,72 @@ body{
 }
 .banner .bolinhas.marcada{
     background-color: #da0026;
+}
+/**********************************/
+/* 4. Corpo
+/**********************************/
+.padrao{
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.padrao .titulo,
+.padrao .descricao{
+    text-align: center;
+    text-transform: uppercase;
+}
+.padrao .corpo{
+    max-width:1140px;
+    margin: auto;
+    
+}
+.padrao .titulo{
+    font-size: 20px;
+    font-weight: 600;
+}
+.padrao .descricao{
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.padrao.branco{
+    background-color: #b1b7aa;
+}
+.padrao.preto{
+    background-color: black;
+}
+.padrao.preto .descricao{
+    color: white;
+}
+.padrao.preto .titulo, .padrao.preto .corpo {
+    color: white;
+}
+
+.padrao.branco .titulo, .padrao.branco .corpo{
+    color: black;
+}
+/**********************************/
+/* 5. Primeira area
+/**********************************/
+
+.sobre__nos{
+    display: flex;
+}
+.area__esquerda{
+    flex: 1;
+}
+.area__direita{
+    width: 520px;
+    text-align: center;
+    
+}
+.area__direita img{
+    width: 480px;
+    box-shadow: 0px 0px 10px #333; /*efeito de sombra na img*/
+}
+.area__esquerda p{
+    font-size: 14px;
+    line-height: 25px;
 }
