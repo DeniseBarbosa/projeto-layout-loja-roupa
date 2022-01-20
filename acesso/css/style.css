@@ -32,6 +32,9 @@ body{
 /**********************************/
 /* 2. Menu / Cabeçalho
 /**********************************/
+.menu_opener{
+    display: none;
+}
 .cabecalho{
     max-width: 1140px;
     height: 100px;
@@ -175,6 +178,7 @@ body{
 }
 .padrao.branco{
     background-color: #f2edf1;
+    
 }
 .padrao.preto{
     background-color: #001119;
@@ -324,4 +328,171 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/**********************************/
+/* 8. Rodape
+/**********************************/
+
+/* BEGINNING OF FOOTER AREA */
+footer {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#FooterFrame {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#FooterBoxLeft {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#FooterBoxLeftUp {
+    display: flex;
+}
+
+#FooterBoxLeftUp a {
+    background-color: #717171;
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#FooterBoxLeftUp img {
+    width: 14px;
+    height: auto;
+}
+
+#FooterBoxLeftUp a:hover {
+    background-color: #b28756;
+}
+
+#FooterBoxLeftDown h4 {
+    color: #ffffff;
+    font-weight: normal;
+}
+
+#FooterBoxCenter {
+    width: 380px;
+}
+
+#FooterBoxCenter p {
+    color: #717171;
+    padding-right: 20px;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+#FooterBoxRight {
+    width: 380px;
+    height: 200px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+#FooterFrame input {
+    border: 0px;
+    border-bottom: 2px solid #717171;
+    background-color: #333333;
+    width: 270px;
+    height: 35px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+}
+
+#FooterFrame input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* END OF FOOTER AREA */
+/**********************************/
+/* 9. Responsividade tablet
+/**********************************/
+
+@media (min-width:450px) and (max-width:800px){
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgb(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li a{
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-left: 50px;
+        border: 0;
+    }
+    .menu li.menu__ativo a{
+        border: 0;
+        color: #B43104;
+    }
+    .logo{
+        margin-left: 30px;
+    }
+    .menu_opener{
+        width: 45px;
+        margin-right: 30px;
+        display: block;
+    }
+    .sobre__nos{
+        flex-direction: column;
+    }
+    .area__esquerda{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .slide__conteudo{
+        margin-left: 30px;
+        
+    }
+    .area__direita{
+        width: auto;
+    }
+    .servicos{
+        flex-wrap: wrap;
+    }
+    .icones__servicos{
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+    .icones__servicos:first-child{
+        border-left: 0;
+    }
+    #FooterBoxCenter{
+        margin-right: 9px;
+    }
+    #FooterBoxRight{
+        margin-right: 30px;
+    }
 }
