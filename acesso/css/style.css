@@ -212,3 +212,30 @@ body{
     font-size: 14px;
     line-height: 25px;
 }
+
+/**********************************/
+/* 6. Segunda area
+/**********************************/
+
+.servicos{
+    display: flex; /*area uma do lado da outra*/
+}
+.icones__servicos{
+    flex: 1; /*area uma do lado da outra complemento*/
+    text-align: center; /*vai centralizar a area + no meio*/
+    border-right: 1px solid #333; /*traços ao lado dos icones*/
+    padding: 15px;
+}
+.icones__servicos:first-child{
+    border-left: 1px solid #333; /*traços ao lado dos icones*/
+}
+.icones__servicos h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.icones__servicos p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
